@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Page with Media Queries</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+
+            /* For medium-sized screens and above */
+            body {
+                padding-top: 80px;
+            }
+
+            header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+            }
+
+            main {
+                margin-top: 60px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+
+            /* For large screens and above */
+            main {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                text-align: left;
+            }
+
+            footer {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> Page using media query</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Section 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+
+        <section>
+            <h2>Section 2</h2>
+            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </section>
+
+        <section>
+            <h2>Section 3</h2>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Varun Manwatkar. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
